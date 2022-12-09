@@ -25,7 +25,7 @@ const get_user=async(req,res)=>{
         const users = await User.find();
         res.status(200).send({
             statusCode: 200,
-            statusMessage: 'Created',
+            statusMessage: 'user data',
             message: 'Successfully created a user.',
             data: users,
         });    
