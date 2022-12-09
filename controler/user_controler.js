@@ -22,7 +22,7 @@ try {
 }
 const get_user=async(req,res)=>{
     try {
-        const users = await User.findById({_id:req.query._id});
+        const users = await User.find();
         res.status(200).send({
             statusCode: 200,
             statusMessage: 'Created',
